@@ -7,7 +7,7 @@
     "test": "npx wdio wdio.conf.ts",
     "wdio": "wdio run wdio.conf.js",
     "repl": "npx wdio repl chrome",
-    "demo": "export DEBUG=N HEADLESS=N && npx wdio config/wdio.test.conf.ts --cucumberOpts.tagExpression='@ecommerce'",
+    "test:smoke": "export DEBUG=N HEADLESS=N && npx wdio config/wdio.test.conf.ts --cucumberOpts.tagExpression='@ecommerce'",
     "test:debug": "export DEBUG=Y && export HEADLESS=N && npx wdio config/wdio.test.conf.ts --cucumberOpts.tagExpression='@ecommerce' > output.txt"
   },
   "keywords": [
